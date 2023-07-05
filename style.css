@@ -1,14 +1,37 @@
 body {
     width: fit-content;
+    max-width: 50%;
+    margin: auto;
+}
+
+h1 {
+    width: fit-content;
     margin: auto;
 }
 
 ul {
     padding-left: 0;
+    list-style-type:none;
+}
+
+.nav-option {
+    margin-bottom: 3px;
 }
 
 .nav-option a {
     text-decoration: none;
-    font-weight: bold;
     color: black;
+}
+
+.nav-option a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.section-header {
+    margin-top: 40px;
+}
+
+img {
+    width: 100%;
 }
