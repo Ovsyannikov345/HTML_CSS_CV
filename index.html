@@ -74,6 +74,45 @@
                     </li>
                 </ul>
             </section>
+            <section>
+                <h2 class="section-header">CODE EXAMPLE</h2>
+                <pre  class="code-example">
+                    <code>
+using System;
+
+namespace Solution
+{
+    public static class Kata
+    {
+        public static bool IsValidIp(string ipAddress)
+        {
+            if (!IsValidSymbols(ipAddress))
+            {
+                return false;
+            }
+
+            string[] octets = ipAddress.Split('.');
+
+            if (octets.Length != 4)
+            {
+                return false;
+            }
+
+            foreach (var octet in octets)
+            {
+                if (!IsValidOctet(octet))
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+    }
+}
+                    </code>
+                </pre>
+            </section>
         </main>
     </body>
 </html>
