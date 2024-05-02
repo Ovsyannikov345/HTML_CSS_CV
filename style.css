@@ -1,13 +1,18 @@
 body {
     width: fit-content;
-    max-width: 600px;
+    max-width: 900px;
     height: 100%;
     margin: 0 auto;
-    background: linear-gradient(rgb(0, 164, 210), rgb(0, 85, 109))
+    background: linear-gradient(rgb(0, 135, 173), rgb(0, 85, 109))
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+    font-family: sans-serif;
 }
 
 .container {
     padding: 15px;
+    padding-left: 50px;
     background-color: #ffffff;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.7);
 }
@@ -51,7 +56,7 @@ img {
 
 .contact-options a {
     text-decoration: none;
-    color: black;;
+    color: black;
 }
 
 .contact-options a:hover {
@@ -69,6 +74,15 @@ img {
 
 .experience-list li {
     margin-bottom: 6px;
+}
+
+.experience-list a {
+    text-decoration: none;
+    color: black;
+}
+
+.experience-list a:hover {
+    font-weight: bold;
 }
 
 .course-list li {
